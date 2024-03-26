@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+/* prettier-ignore */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,25 +25,103 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+/* prettier-ignore */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* prettier-ignore */
 body {
 	line-height: 1;
 }
+/* prettier-ignore */
 ol, ul {
 	list-style: none;
 }
+/* prettier-ignore */
 blockquote, q {
 	quotes: none;
 }
+/* prettier-ignore */
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
+/* prettier-ignore */
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #240046;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #e0aaff;
+}
+
+main {
+  text-align: center;
+  background-color: #5a189a;
+  width: 100%;
+  max-width: 1024px;
+  min-height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 10px;
+}
+
+.musiker-text {
+  color: #e0aaff;
+  font-family: roboto;
+  text-align: center;
+}
+
+.musiker-header {
+  font-family: righteous, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e0aaff;
+  margin: 20px;
+}
+
+.portrait {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.musiker {
+  border-right: 1px solid #7b2cbf;
+  width: 250px;
+  height: 400px;
+  padding: 10px 10px;
+}
+
+.musiker:last-child {
+  border-right: none;
+}
+
+#logo {
+  font-size: 80px;
+  text-align: center;
+  font-family: righteous, sans-serif;
+  text-transform: uppercase;
+}
+
+#banner {
+  display: flex;
+  background-color: aquamarine;
+  min-width: 960px;
+  height: 150px;
+  border-radius: 10px;
 }
