@@ -207,6 +207,8 @@ body {
   margin-top: 5px;
   border: 3px solid #10002b;
   border-radius: 50%;
+  filter: saturate(70%);
+  filter: contrast(98%);
 }
 
 .musiker-header {
