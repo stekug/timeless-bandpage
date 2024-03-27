@@ -58,122 +58,149 @@ table {
 
 html {
   box-sizing: border-box;
+  font-family: roboto, sans-serif;
 }
 
 body {
-  background-color: #240046;
+  /* background-color: #10002b; */
+  background: linear-gradient(-240deg, #10002b, #3e0353, #2c0e37);
+
+  color: #c77dff;
   font-family: roboto, sans-serif;
-  color: #e0aaff;
   display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 150vh;
+}
+
+.maincontent {
+  box-sizing: border-box;
+  background-color: #5a189a;
+  border-radius: 10px;
+  padding: 15px 5px;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bandtext {
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  max-width: 1024px;
+  margin-top: 25px;
+  padding: 10px 50px;
+}
+
+.bandtext h3 {
+  margin-top: 10px;
+  font-family: righteous, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  padding: 10px 0;
+}
+
+.bandtext span {
+  line-height: 1.5;
+  padding: 15px 0;
+  display: block;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 5px;
+  border: 3px solid #10002b;
+  border-radius: 50%;
+}
+
+.musiker-header {
+  font-family: righteous, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+.musiker {
+  border-bottom: 1px solid #7b2cbf;
+  margin-top: 15px;
+  width: 100%;
+  display: block;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+}
+
+.musiker:last-child {
+  border-bottom: none;
+}
+
+.musiker-text {
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  margin: 15px 15px 0;
+  line-height: 1.5;
+  padding: 15px 0;
+  display: block;
+}
+
+#logo {
+  font-family: righteous, sans-serif;
+  font-size: 5rem;
+  max-width: 100%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 25px;
 }
 
 #banner {
-  background-color: #e0aaff;
   width: 100%;
-  height: 250px;
-  resize: both;
-  overflow: hidden;
+  height: 175px;
 }
 
 #banner img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  resize: both;
 }
 
-#logo {
-  font-size: 100px;
-  text-align: center;
-  font-family: righteous, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  margin: 15px 0;
-}
-
-main {
-  background-color: #5a189a;
-  width: 100%;
-  max-width: 1024px;
-  min-height: 400px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-.musiker {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #7b2cbf;
-  width: 100%;
-  height: 350px;
-  padding: 10px 10px;
-}
-
-.musiker:last-child {
-  border-right: none;
-}
-
-.portrait {
-  width: 150px;
-  border-radius: 50%;
-  border: 2px solid #e0aaff;
-}
-
-.musiker-header {
-  font-family: righteous, sans-serif;
-  font-size: 26px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #e0aaff;
-  margin: 20px;
-}
-
-.musiker-text {
-  color: #e0aaff;
-  font-family: roboto;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.bandtext {
-  background-color: #5a189a;
-  width: 100%;
-  margin-top: 25px;
-  max-width: 1024px;
-  min-height: 100px;
-  text-align: center;
-  justify-content: center;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding: 25px 15px;
-}
-
-h3 {
-  font-family: righteous;
-  letter-spacing: 1px;
-  font-size: 26px;
-  margin-bottom: 15px;
-}
-
-footer {
-  display: flex;
-  margin: 100px;
-  font-size: 12px;
-}
-
-
-@media (max-width: 900px) {
-  body {
+@media (min-width: 960px) {
+  .maincontent {
     flex-direction: row;
+    max-width: 1024px;
   }
-  .main {
-    flex-direction: row;
+
+  .bandtext {
+    border: 2px solid #7b2cbf;
+  }
+
+  .musiker {
+    border-bottom: none;
+    border-right: 1px solid #7b2cbf;
+  }
+
+  .musiker:last-child {
+    border: none;
+  }
+
+  .musiker-text {
+    margin: 5px;
+    padding: 5px 5px;
+  }
+
+  .portrait {
+    max-width: 150px;
+  }
+
+  #logo {
+    font-size: 6em;
   }
 }
